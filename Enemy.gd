@@ -1,6 +1,5 @@
 extends "res://character/Character.gd"
 
-
 # случайное движение объекта
 func _ready():
 	can_move = false
