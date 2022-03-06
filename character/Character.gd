@@ -18,14 +18,19 @@ onready var raycasts = {
 	'down': $RayCastDown
 }
 
+# метод для движения, принимает направление 
+# dir - направление движения
 func move(dir):
-#	начинаем движение
+#	задаем скорость анимации
 	$AnimationPlayer.playback_speed = speed
+#	перезадаем глобальную переменную направления движения facing
 	facing = dir
-#	если сталкиваемся - выход из метода
+#	если сталкиваемся - выход из метода, остановка движения
 	if raycasts[facing].is_colliding():
-		return
-#	can_move = false
+		return 
+#	задана возможность движения false, но объект не движется
+	can_move = true
+#	выбираем анимацию в соответствии с направлением движения
 	$AnimationPlayer.play(facing)
 #	движение при помощи твин анимации
 	$MoveTween.interpolate_property(
@@ -41,4 +46,5 @@ func move(dir):
 	return true
 	
 func _on_MoveTween_tween_all_completed(object, key):
+#	если анимация закончилась то остановка движения
 	can_move = true

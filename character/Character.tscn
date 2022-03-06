@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://character/Character.gd" type="Script" id=1]
-[ext_resource path="res://assets/player.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 21.5, 25 )
+extents = Vector2( 21.5, 24.5 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -87,10 +86,9 @@ tracks/0/keys = {
 
 [node name="Character" type="Area2D"]
 script = ExtResource( 1 )
-speed = 10
+speed = 6
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
 hframes = 5
 vframes = 4
 
