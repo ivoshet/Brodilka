@@ -72,7 +72,7 @@ region_rect = Rect2( 640, 0, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="grey_box_akso"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grey_box_akso"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="grey_box_akso/StaticBody2D"]
 polygon = PoolVector2Array( -31, -31, 30, -30, 32, 32, -30, 33 )
 
 [node name="green_box_akso" type="Sprite" parent="."]
@@ -106,7 +106,7 @@ region_rect = Rect2( 448, 0, 64, 64 )
 [node name="StaticBody2D" type="StaticBody2D" parent="red_box_akso"]
 collision_mask = 15
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="red_box_akso"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="red_box_akso/StaticBody2D"]
 polygon = PoolVector2Array( -31, -31, 30, -30, 32, 32, -30, 33 )
 
 [node name="brown_box_akso" type="Sprite" parent="."]
@@ -128,7 +128,7 @@ region_rect = Rect2( 448, 448, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="breek_box_akso"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="breek_box_akso"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="breek_box_akso/StaticBody2D"]
 polygon = PoolVector2Array( -31, -31, 30, -30, 32, 32, -30, 33 )
 
 [node name="green_floor" type="Sprite" parent="."]
@@ -172,7 +172,7 @@ region_rect = Rect2( 0, 0, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="red_door"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="red_door"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="red_door/StaticBody2D"]
 polygon = PoolVector2Array( -31, -31, 30, -30, 32, 32, -30, 33 )
 
 [node name="green_door" type="Sprite" parent="."]
