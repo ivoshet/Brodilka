@@ -1,4 +1,5 @@
 extends Area2D
+#Pickup
 
 # кортеж принимает все спрайты для уровня
 var textures = {

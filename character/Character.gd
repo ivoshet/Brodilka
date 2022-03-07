@@ -1,5 +1,5 @@
 extends Area2D
-
+#Character
 export (int) var speed = 3
 
 var tile_size = 64

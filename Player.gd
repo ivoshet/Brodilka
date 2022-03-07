@@ -1,4 +1,5 @@
 extends "res://character/Character.gd"
+#Player.gd
 signal moved
 
 signal dead
