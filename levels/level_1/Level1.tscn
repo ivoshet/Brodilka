@@ -1,20 +1,20 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://TileSet.tres" type="TileSet" id=1]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Level1.gd" type="Script" id=3]
-[ext_resource path="res://Pickup.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/keyGreen.png" type="Texture" id=6]
-[ext_resource path="res://assets/doorRed_lock.png" type="Texture" id=7]
-[ext_resource path="res://assets/doorGreen_lock.png" type="Texture" id=8]
-[ext_resource path="res://assets/sokoban_tilesheet.png" type="Texture" id=9]
-[ext_resource path="res://assets/keyRed.png" type="Texture" id=10]
-[ext_resource path="res://assets/star.png" type="Texture" id=11]
+[ext_resource path="res://levels/level_1/Level1.gd" type="Script" id=1]
+[ext_resource path="res://assets/keyGreen.png" type="Texture" id=2]
+[ext_resource path="res://assets/doorRed_lock.png" type="Texture" id=3]
+[ext_resource path="res://assets/doorGreen_lock.png" type="Texture" id=4]
+[ext_resource path="res://assets/sokoban_tilesheet.png" type="Texture" id=5]
+[ext_resource path="res://assets/keyRed.png" type="Texture" id=6]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Pickup.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/star.png" type="Texture" id=10]
+[ext_resource path="res://TileSet.tres" type="TileSet" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "brown_box"
-0/texture = ExtResource( 9 )
+0/texture = ExtResource( 5 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 64, 0, 64, 64 )
@@ -28,7 +28,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "red_box"
-1/texture = ExtResource( 9 )
+1/texture = ExtResource( 5 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 128, 0, 64, 64 )
@@ -42,7 +42,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "blue_box"
-2/texture = ExtResource( 9 )
+2/texture = ExtResource( 5 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 192, 0, 64, 64 )
@@ -56,7 +56,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "green_box"
-3/texture = ExtResource( 9 )
+3/texture = ExtResource( 5 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 256, 0, 64, 64 )
@@ -70,7 +70,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "grey_box"
-4/texture = ExtResource( 9 )
+4/texture = ExtResource( 5 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 320, 0, 64, 64 )
@@ -84,7 +84,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "grey_box_akso"
-5/texture = ExtResource( 9 )
+5/texture = ExtResource( 5 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 640, 0, 64, 64 )
@@ -98,7 +98,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "green_box_akso"
-6/texture = ExtResource( 9 )
+6/texture = ExtResource( 5 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 576, 0, 64, 64 )
@@ -112,7 +112,7 @@
 6/shapes = [  ]
 6/z_index = 0
 7/name = "blue_box_akso"
-7/texture = ExtResource( 9 )
+7/texture = ExtResource( 5 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 512, 0, 64, 64 )
@@ -126,7 +126,7 @@
 7/shapes = [  ]
 7/z_index = 0
 8/name = "red_box_akso"
-8/texture = ExtResource( 9 )
+8/texture = ExtResource( 5 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 448, 0, 64, 64 )
@@ -140,7 +140,7 @@
 8/shapes = [  ]
 8/z_index = 0
 9/name = "brown_box_akso"
-9/texture = ExtResource( 9 )
+9/texture = ExtResource( 5 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 384, 0, 64, 64 )
@@ -154,7 +154,7 @@
 9/shapes = [  ]
 9/z_index = 0
 10/name = "briak_box_akso"
-10/texture = ExtResource( 9 )
+10/texture = ExtResource( 5 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 448, 448, 64, 64 )
@@ -168,7 +168,7 @@
 10/shapes = [  ]
 10/z_index = 0
 11/name = "breek_box_akso"
-11/texture = ExtResource( 9 )
+11/texture = ExtResource( 5 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 448, 448, 64, 64 )
@@ -182,7 +182,7 @@
 11/shapes = [  ]
 11/z_index = 0
 12/name = "green_floor"
-12/texture = ExtResource( 9 )
+12/texture = ExtResource( 5 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 704, 384, 64, 64 )
@@ -196,7 +196,7 @@
 12/shapes = [  ]
 12/z_index = 0
 13/name = "grey_floor"
-13/texture = ExtResource( 9 )
+13/texture = ExtResource( 5 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 768, 384, 64, 64 )
@@ -210,7 +210,7 @@
 13/shapes = [  ]
 13/z_index = 0
 14/name = "grey_wall"
-14/texture = ExtResource( 9 )
+14/texture = ExtResource( 5 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 640, 192, 64, 64 )
@@ -224,7 +224,7 @@
 14/shapes = [  ]
 14/z_index = 0
 15/name = "red_dot"
-15/texture = ExtResource( 9 )
+15/texture = ExtResource( 5 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 704, 128, 64, 64 )
@@ -238,7 +238,7 @@
 15/shapes = [  ]
 15/z_index = 0
 16/name = "green_dot"
-16/texture = ExtResource( 9 )
+16/texture = ExtResource( 5 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 704, 256, 64, 64 )
@@ -252,7 +252,7 @@
 16/shapes = [  ]
 16/z_index = 0
 17/name = "red_door"
-17/texture = ExtResource( 7 )
+17/texture = ExtResource( 3 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 0, 0, 64, 64 )
@@ -266,7 +266,7 @@
 17/shapes = [  ]
 17/z_index = 0
 18/name = "green_door"
-18/texture = ExtResource( 8 )
+18/texture = ExtResource( 4 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 0, 64, 64 )
@@ -280,7 +280,7 @@
 18/shapes = [  ]
 18/z_index = 0
 19/name = "green_key"
-19/texture = ExtResource( 6 )
+19/texture = ExtResource( 2 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 0, 0, 64, 64 )
@@ -294,7 +294,7 @@
 19/shapes = [  ]
 19/z_index = 0
 20/name = "red_key"
-20/texture = ExtResource( 10 )
+20/texture = ExtResource( 6 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, 0, 64, 64 )
@@ -308,7 +308,7 @@
 20/shapes = [  ]
 20/z_index = 0
 21/name = "coin"
-21/texture = ExtResource( 9 )
+21/texture = ExtResource( 5 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 576, 320, 64, 64 )
@@ -322,7 +322,7 @@
 21/shapes = [  ]
 21/z_index = 0
 22/name = "key_red"
-22/texture = ExtResource( 10 )
+22/texture = ExtResource( 6 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 0, 64, 64 )
@@ -336,7 +336,7 @@
 22/shapes = [  ]
 22/z_index = 0
 23/name = "star"
-23/texture = ExtResource( 11 )
+23/texture = ExtResource( 10 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 576, 320, 64, 64 )
@@ -351,9 +351,9 @@
 23/z_index = 0
 
 [node name="Level1" type="Node2D"]
-script = ExtResource( 3 )
-Enemy = ExtResource( 5 )
-Pickup = ExtResource( 4 )
+script = ExtResource( 1 )
+Enemy = ExtResource( 8 )
+Pickup = ExtResource( 9 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -364,7 +364,7 @@ __meta__ = {
 }
 
 [node name="Walls" type="TileMap" parent="."]
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 11 )
 show_collision = true
 collision_mask = 15
 format = 1
@@ -374,7 +374,7 @@ __meta__ = {
 }
 
 [node name="Items" type="TileMap" parent="."]
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 11 )
 collision_layer = 12
 collision_mask = 15
 format = 1
@@ -383,5 +383,5 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 7 )]
 position = Vector2( 480, 288 )
