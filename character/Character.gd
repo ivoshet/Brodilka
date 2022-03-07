@@ -27,9 +27,10 @@ func move(dir):
 	facing = dir
 #	если сталкиваемся - выход из метода, остановка движения
 	if raycasts[facing].is_colliding():
+		print("30 line")
 		return 
 #	задана возможность движения false, но объект не движется
-	can_move = true
+	can_move = false
 #	выбираем анимацию в соответствии с направлением движения
 	$AnimationPlayer.play(facing)
 #	движение при помощи твин анимации
@@ -45,6 +46,7 @@ func move(dir):
 	$MoveTween.start()
 	return true
 	
-func _on_MoveTween_tween_all_completed(object, key):
-#	если анимация закончилась то остановка движения
+
+
+func _on_MoveTween_tween_completed(object, key):
 	can_move = true

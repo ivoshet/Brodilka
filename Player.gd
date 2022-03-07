@@ -5,6 +5,9 @@ signal dead
 signal grabbed_key
 signal win
 
+#func _ready():
+#	can_move = true
+	
 func _process(delta):
 #	если возможность движения есть то проверяем какая кнопка была нажата, 
 #	и если была нажата то испускаем сигнал
