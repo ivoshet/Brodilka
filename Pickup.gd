@@ -1,6 +1,8 @@
 extends Area2D
 #Pickup
 
+signal coin_pickup
+
 # кортеж принимает все спрайты для уровня
 var textures = {
 	'coin': 'res://assets/coin.png',
@@ -29,8 +31,11 @@ func init(_type, pos):
 	position = pos
 
 func pickup():
+	match type:
+		'coin':
+			emit_signal('coin_pickup', 1)
 	$CollisionShape2D.disabled = true
 	$Tween.start()
 
-func _on_Tween_tween_all_completed(object, key):
+func _on_Tween_tween_completed(object, key):
 	queue_free()

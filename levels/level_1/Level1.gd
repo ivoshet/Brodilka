@@ -48,6 +48,7 @@ func spawn_items():
 				print(p)
 				p.init(type, pos)
 				add_child(p)
+				p.connect('coin_pickup', $HUD, 'update_score')
 				
 func game_over():
 	Global.game_over()
