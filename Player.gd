@@ -21,7 +21,13 @@ func _process(delta):
 # 	проверяем столкновение
 func _on_Player_area_entered(area):
 	if area.is_in_group('enemies'):
+		area.hide()
+		set_process(false)
+		$CollisionShape2D.disabled = true
+		$AnimationPlayer2.play("die")
+		yield($AnimationPlayer2, "animation_finished")
 		emit_signal('dead')
+		return
 	if area.has_method('pickup'):
 		area.pickup()
 	if area.type == 'key_red':
