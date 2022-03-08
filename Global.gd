@@ -1,5 +1,6 @@
 extends Node
 #Global
+var score: int
 
 var levels = [ 
 	'res://levels/level_1/Level1.tscn',
@@ -12,6 +13,7 @@ var start_screen = 'res://ui/StartScreen.tscn'
 var end_screen = 'res://ui/GameOver.tscn'
 
 func new_game():
+	score = 0
 	current_level = -1
 	next_level()
 
